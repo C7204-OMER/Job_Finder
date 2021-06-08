@@ -1,9 +1,17 @@
 import React from "react";
 
-const Form = () => {
+const Form = ({ newQuery }) => {
   return (
-    <div>
-      <h1>Form</h1>
+    <div className="form">
+      <form action="">
+        <input type="text" placeholder="Job Description" />
+        <br />
+        <input type="text" placeholder="Location" />
+        <br />
+        <button onClick={() => newQuery("react", "germany")} type="button">
+          Search
+        </button>
+      </form>
     </div>
   );
 };
