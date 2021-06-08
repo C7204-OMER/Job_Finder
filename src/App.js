@@ -1,7 +1,7 @@
 import "./App.css";
-import Form from "./components/form/From";
-import JobCard from "./components/jobCard/JobCard";
-import Header from "./header/Header";
+import Form from "./components/form/Form";
+import Header from "./components/header/Header";
+import JobCard from "./components/jobcard/JobCard";
 
 function App() {
   const dummy = {
