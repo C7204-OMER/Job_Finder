@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Form from "./components/form/From";
+import JobCard from "./components/jobCard/JobCard";
+import Header from "./header/Header";
 
 function App() {
+  const dummy = {
+    company_logo:
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftr.linkedin.com%2Fcompany%2Fclarusway%3Ftrk%3Dpublic_profile_topcard-current-company&psig=AOvVaw2-YlTPNy_8bd5p6SxpUL3r&ust=1623234800485000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCH4NXqh_ECFQAAAAAdAAAAABAD",
+    title: "Fullstack Developer",
+    company: "Clarusway",
+    type: "Full-time",
+    company_url: "http://clarusway.com/",
+    id: "xyz",
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Form />
+      <JobCard />
     </div>
   );
 }
